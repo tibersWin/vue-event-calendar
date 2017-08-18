@@ -14,6 +14,7 @@
           :class="{
             today: date.status ? (today == date.date) : false,
             event: date.status ? (date.title != undefined) : false,
+            wedding: date.isWedding ? (date.title != undefined) : false,
             [calendar.options.className] : (date.date == selectedDay)
           }">
           <p class="date-num"
