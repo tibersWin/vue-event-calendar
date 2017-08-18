@@ -10,7 +10,7 @@
         <span v-for="dayName in i18n[calendar.options.locale].dayNames" class="item">{{dayName}}</span>
       </div>
       <div class="dates" >
-        <div v-for="date in dayList" class="item"
+        <div v-for="date in dayList" class="item isWedding"
           :class="{
             today: date.status ? (today == date.date) : false,
             event: date.status ? (date.title != undefined) : false,
